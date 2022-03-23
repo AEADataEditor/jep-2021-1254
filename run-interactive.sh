@@ -27,13 +27,18 @@ DOCKERIMG=$(echo $MYHUBID/$MYIMG | tr [A-Z] [a-z])
 
 # ensure that the directories are writable by Docker
 
+# this might work locally
+
+#-e DISABLE_AUTH=true \
+
+# This is used for Codespaces, and can work elsewhere
+DOCKEROPTS="$DOCKEROPTS -e PASSWORD=testing"
 
 # run the docker 
 
 time docker run $DOCKEROPTS \
   -v ${STATALIC}:/usr/local/stata/stata.lic \
   -v $(pwd):/home/rstudio/project \
-  -e DISABLE_AUTH=true \
   -p 8787:8787 \
   --entrypoint /init \
   $DOCKERIMG:$TAG "$@"
