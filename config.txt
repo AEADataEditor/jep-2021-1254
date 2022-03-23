@@ -1,0 +1,6 @@
+# configuration created on 2022-03-23_16:10
+VERSION=17
+TAG=2022-03-23
+MYHUBID=aeadataeditor
+MYIMG=jep-2021-1254
+STATALIC=/workspaces/jep-2021-1254/stata.lic
