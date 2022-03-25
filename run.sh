@@ -43,6 +43,7 @@ codedir=$(dirname $file)
 time docker run $DOCKEROPTS \
   -v ${STATALIC}:/usr/local/stata/stata.lic \
   -v $(pwd)/${codedir}:/home/rstudio/project \
+  -w /home/rstudio/project \
   --entrypoint /home/rstudio/project/${basefile} \
   $DOCKERIMG:$TAG "$@"
 
