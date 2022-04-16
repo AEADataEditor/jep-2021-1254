@@ -1,0 +1,9 @@
+{
+    "name": "dev-demo",
+    /* "image": "aeadataeditor/stata-project-with-docker:latest", */
+    "initializeCommand": ".devcontainer/init.sh",
+    "settings": {
+        "workbench.colorTheme": "Visual Studio Light",
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+}
