@@ -8,7 +8,7 @@ else
 fi
 
 # name of the file to run
-file=aearep-3116/163061/build_from_source.sh
+file=aearep-3116/163061/Replication/build_from_source.sh
 
 
 echo "================================"
