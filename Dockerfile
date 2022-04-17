@@ -2,7 +2,7 @@
 ARG SRCVERSION=17
 ARG SRCTAG=2022-01-17
 ARG SRCHUBID=dataeditors
-ARG RVERSION=4.1.0
+ARG RVERSION=3.6.3
 ARG RTYPE=verse
 
 # define the source for Stata
